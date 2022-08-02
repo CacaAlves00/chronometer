@@ -1,0 +1,33 @@
+#timer {
+    width: 50%;
+    height: 23vh;
+    border: 3px solid #24292F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    & > * {
+        margin: 0;
+    }
+
+    h2, p {
+        user-select: none;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 550px)
+{
+    #timer {
+        width: 80vw !important;
+        height: 10vh !important;
+  }
+}

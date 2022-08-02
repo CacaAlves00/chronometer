@@ -1,0 +1,47 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 3% 0 0 0;
+    box-sizing: border-box;
+    background-color: #EAEBEB;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+        margin-top: 6vh;
+    }
+
+    h1 {
+        margin: 0;
+        text-decoration: underline;
+        user-select: none;
+    }
+
+    #length-counters-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 14vh;
+        border: 3px solid #24292F;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .icon {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 550px)
+{
+    #length-counters-container {
+        width: 80vw !important;
+        height: 8vh;
+  }
+}
